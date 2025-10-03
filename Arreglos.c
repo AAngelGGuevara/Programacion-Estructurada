@@ -60,7 +60,7 @@ int main()
             }
             else
             {
-                printf("El valor ingresado no es v·lido. Seleccione otro.\n");
+                printf("El valor ingresado no es v√°lido. Seleccione otro.\n");
             }
         break;
 
