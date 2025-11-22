@@ -24,3 +24,4 @@ int main()
 	printf("El resultado es %f", res);
 
 	return 0;
+}
