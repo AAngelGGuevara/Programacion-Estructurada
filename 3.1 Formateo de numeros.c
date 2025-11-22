@@ -2,11 +2,9 @@
 #include <stdlib.h>
 #include <math.h>
 
-int main() {
-    double num1, num2, num3;
-    double suma, resta, multiplicacion, division;
-    double raiz;
-    double redondeado;
+int main() 
+{
+    double num1, num2, num3, suma, resta, multiplicacion, division, raiz, redondeado;
     int comparacion;
 
     printf("Ingrese tres numeros decimales:\n");
@@ -23,9 +21,8 @@ int main() {
     division = num1 / num2 / num3;
     raiz = sqrt(num1);
 
-    redondeado = (int)(num2 * 100 + 0.5);
-    redondeado = redondeado / 100.0;
-    comparacion = (num3 > 10) ? 1 : ((num3 < 10) ? -1 : 0);
+    redondeado = (num2 * 100 + 0.5) / 100;
+    comparacion = (num3 > 10) ? 1 : (num3 < 10) ? -1 : 0;
 
     printf("\nResultados:\n");
     printf("Suma: %.3lf\n", suma);
@@ -33,11 +30,9 @@ int main() {
     printf("Multiplicacion: %.2lf\n", multiplicacion);
     printf("Division: %.6lf\n", division);
     printf("Raiz cuadrada del numero 1: %.5lf\n", raiz);
-    printf("Numero redondeado: %.2lf\n", redondeado);
-    printf("Comparacion del Numero 3 con 10: ");
-    printf(comparacion == 1 ? "Mayor\n" : (comparacion == -1 ? "Menor\n" : "Igual\n"));
+    printf("Numero 2 redondeado: %.2lf\n", redondeado);
+    printf("Comparacion del numero 3 con 10: ");
+    printf(comparacion == 1 ? "Mayor\n" : comparacion == -1 ? "Menor\n" : "Igual\n");
 
     return 0;
-    system("PAUSE");
 }
-
