@@ -9,8 +9,8 @@ int main()
     for (num=0; num<10; num++)
     {
          cont = num + 1;
-         printf("%i", cont);
+         printf("%i\n", cont);
     }
-    system ("PAUSE");
     return 0;
 }
+
